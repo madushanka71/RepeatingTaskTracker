@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tests</title>
+</head>
+<body>
+    <script src="js/main.js"></script>
+    <script>
+        // Simple tests
+        console.assert(typeof greet === 'function', 'greet function exists');
+        
+        const testCounter = new Counter();
+        testCounter.increment();
+        console.assert(testCounter.count === 1, 'Counter increments correctly');
+        
+        console.log('All tests passed!');
+    </script>
+</body>
+</html>
